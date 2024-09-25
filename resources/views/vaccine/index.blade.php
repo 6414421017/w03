@@ -32,13 +32,13 @@
                             <td class="border-b">{{ $item->vaccine }}</td>
                             <td class="border-b">
                                 <form action="{{ route('vaccine.destroy', $item->id) }}" method="POST">
-                                    <a class="border rounded-lg px-2" href="{{ route('vaccine.show', $item->id) }}"><i
+                                    <a class="border rounded-lg px-2  bg-green-600 text-white" href="{{ route('vaccine.show', $item->id) }}"><i
                                             class="fa-solid fa-list"></i> Show</a>
-                                    <a class="border rounded-lg px-2" href="{{ route('vaccine.edit', $item->id) }}"><i
+                                    <a class="border rounded-lg px-2 bg-blue-600 text-white" href="{{ route('vaccine.edit', $item->id) }}"><i
                                             class="fa-solid fa-pen-to-square"></i> Edit</a>
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="border rounded-lg px-2"><i
+                                    <button type="submit" class="border rounded-lg px-2 bg-red-700 text-white"><i
                                             class="fa-solid fa-trash"></i> Delete</button>
                                 </form>
                             </td>
